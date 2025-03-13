@@ -1,8 +1,10 @@
+@import 'variables.css';
+
 /* Styles for the reservations page */
 
 :root {
-    --primary-color: #007BFF;
-    --secondary-color: #5cb85c;
+    --primary-color: #7EB77F;
+    --secondary-color: #A4D4A5;
     --accent-color: #f8f9fa;
     --text-color: #333;
     --light-text: #fff;
@@ -80,7 +82,7 @@ h2::after {
 .reservation-form select:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 0 0 3px rgba(126, 183, 127, 0.2);
 }
 
 .reservation-form button {
@@ -99,7 +101,7 @@ h2::after {
 }
 
 .reservation-form button:hover {
-    background-color: #4cae4c;
+    background-color: var(--primary);
     transform: translateY(-2px);
 }
 
@@ -111,10 +113,10 @@ h2::after {
 .confirmation {
     margin-top: 25px;
     padding: 20px;
-    background-color: #dff0d8;
-    border-left: 4px solid #5cb85c;
+    background-color: #e6f3e6;
+    border-left: 4px solid var(--primary);
     border-radius: var(--border-radius);
-    color: #3c763d;
+    color: #3c6e3c;
     animation: fadeIn 0.5s ease-out;
 }
 
