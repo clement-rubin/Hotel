@@ -1,0 +1,102 @@
+/* CSS styles specific to the index.html page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.search-box {
+    margin-top: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 300px;
+}
+
+.search-box button {
+    padding: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+}
+
+.featured-section {
+    margin: 20px 0;
+}
+
+.view-more {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.why-us {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+}
+
+.benefit {
+    text-align: center;
+    width: 30%;
+}
+
+.benefit i {
+    font-size: 40px;
+    color: #ff5722;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
