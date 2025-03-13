@@ -1,12 +1,12 @@
 :root {
-    --primary: #2663EB;
-    --primary-dark: #1B4FBF;
-    --secondary: #5cb85c;
+    --primary: #7EB77F; /* Changé de bleu #2663EB à vert pastel */
+    --primary-dark: #5D9A5E; /* Changé de bleu foncé à vert pastel plus foncé */
+    --secondary: #A4D4A5; /* Vert pastel légèrement plus clair */
     --dark: #1E293B;
     --light: #F8FAFC;
     --gray: #64748B;
     --light-gray: #E2E8F0;
-    --accent: #F59E0B;
+    --accent: #D6E5D6; /* Vert très pâle pour l'accent */
     --danger: #EF4444;
     --success: #10B981;
     --border-radius: 8px;
@@ -25,6 +25,9 @@ body {
     color: var(--dark);
     line-height: 1.6;
     background-color: var(--light);
+    font-size: 16px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -45,16 +48,18 @@ a:hover {
     top: 0;
     z-index: 1000;
     padding: 0;
+    width: 100%;
 }
 
 .nav-container {
-    max-width: 1400px;
+    max-width: 100%;
+    width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    height: 80px;
+    height: 70px;
 }
 
 .logo {
@@ -168,7 +173,7 @@ a:hover {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 20px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -176,7 +181,7 @@ a:hover {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 40px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 1s ease 0.3s;
@@ -241,8 +246,9 @@ a:hover {
 /* Container and sections */
 .container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 40px 20px;
 }
 
 .section-header {
@@ -258,7 +264,7 @@ a:hover {
 }
 
 .section-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--gray);
     max-width: 700px;
     margin: 0 auto;
@@ -290,7 +296,7 @@ a:hover {
     margin-bottom: 20px;
     width: 80px;
     height: 80px;
-    background-color: rgba(38, 99, 235, 0.1);
+    background-color: rgba(126, 183, 127, 0.1); /* Changé pour correspondre au vert pastel */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -373,7 +379,7 @@ a:hover {
 }
 
 .testimonial-rating i {
-    color: var(--accent);
+    color: var(--gold);
     margin-right: 3px;
 }
 
@@ -564,7 +570,11 @@ a:hover {
 /* Responsive */
 @media (max-width: 1024px) {
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.05rem;
     }
 }
 
