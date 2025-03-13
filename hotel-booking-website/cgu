@@ -1,0 +1,175 @@
+// Filename: cgu.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales d'Utilisation | BookMyStay</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cgu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Book<span class="logo-highlight">MyStay</span></span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="hotels.html"><i class="fas fa-hotel"></i> Hôtels</a></li>
+                <li><a href="reservations.html"><i class="fas fa-calendar-check"></i> Réservations</a></li>
+                <li><a href="promotions.html"><i class="fas fa-percent"></i> Promotions</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="login-btn"><i class="fas fa-user"></i> Connexion</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container legal-container">
+        <h1>Conditions Générales d'Utilisation</h1>
+        <p class="last-update">Dernière mise à jour : 13 mars 2025</p>
+
+        <section class="legal-section">
+            <h2>1. Introduction</h2>
+            <p>Bienvenue sur BookMyStay. Les présentes conditions générales d'utilisation régissent votre utilisation du site web BookMyStay, accessible depuis www.bookmystay.fr, ainsi que tous les services associés proposés par BookMyStay.</p>
+            <p>En accédant à ce site web, nous supposons que vous acceptez ces conditions générales d'utilisation. N'utilisez pas BookMyStay si vous n'acceptez pas de prendre toutes les conditions générales d'utilisation énoncées sur cette page.</p>
+        </section>
+
+        <section class="legal-section">
+            <h2>2. Définitions</h2>
+            <p>Les termes suivants s'appliquent aux présentes conditions générales d'utilisation :</p>
+            <ul>
+                <li><strong>"Client", "Vous"</strong> fait référence à la personne accédant à ce site web et acceptant les conditions générales d'utilisation de la société.</li>
+                <li><strong>"La Société", "Nous", "Notre"</strong> fait référence à BookMyStay.</li>
+                <li><strong>"Partie", "Parties"</strong> fait référence à la fois au client et à nous-mêmes.</li>
+                <li><strong>"Services"</strong> désigne tous les services proposés sur ce site web, notamment la possibilité de rechercher, comparer et réserver des hébergements.</li>
+            </ul>
+        </section>
+
+        <section class="legal-section">
+            <h2>3. Utilisation du service</h2>
+            <p>BookMyStay est une plateforme de réservation d'hébergements qui vous permet de rechercher, comparer et réserver des hôtels. Tous les utilisateurs de la plateforme doivent être âgés d'au moins 18 ans.</p>
+            <p>En tant qu'utilisateur, vous êtes responsable de maintenir la confidentialité de vos informations de compte et mot de passe. Vous êtes également responsable de toutes les activités qui se produisent sous votre compte.</p>
+        </section>
+
+        <section class="legal-section">
+            <h2>4. Réservations et paiements</h2>
+            <p>Lorsque vous effectuez une réservation via notre site, vous concluez un contrat directement avec le fournisseur d'hébergement concerné. BookMyStay agit uniquement en tant qu'intermédiaire entre vous et le fournisseur.</p>
+            <p>Les prix affichés incluent la TVA et toutes les taxes applicables, sauf indication contraire. Des frais supplémentaires pour certains services ou équipements peuvent être facturés par l'hébergeur.</p>
+            <p>Le paiement est traité de manière sécurisée via nos partenaires de paiement. Nous n'avons jamais accès à vos informations complètes de carte bancaire.</p>
+        </section>
+
+        <section class="legal-section">
+            <h2>5. Annulations et modifications</h2>
+            <p>Les politiques d'annulation et de modification varient selon les hébergements et les types de tarifs. Ces conditions spécifiques sont clairement indiquées avant la finalisation de votre réservation.</p>
+            <p>En général, pour les tarifs non remboursables, aucun remboursement ne sera effectué en cas d'annulation ou de non-présentation. Pour les tarifs flexibles, les conditions peuvent varier selon la date d'annulation par rapport à la date d'arrivée prévue.</p>
+        </section>
+
+        <section class="legal-section">
+            <h2>6. Droits et responsabilités</h2>
+            <p>BookMyStay se réserve le droit de modifier, suspendre ou interrompre tout aspect du service à tout moment, y compris la disponibilité de toute fonctionnalité, base de données ou contenu.</p>
+            <p>Vous vous engagez à utiliser les Services uniquement à des fins légales et d'une manière qui ne porte pas atteinte aux droits d'autrui ou ne restreint ou n'empêche pas l'utilisation et la jouissance des Services.</p>
+        </section>
+
+        <section class="legal-section">
+            <h2>7. Propriété intellectuelle</h2>
+            <p>Tous les contenus présents sur BookMyStay, y compris les textes, graphiques, logos, images, ainsi que leur compilation, sont la propriété de BookMyStay ou de ses fournisseurs de contenu et sont protégés par les lois sur le droit d'auteur.</p>
+            <p>Vous ne pouvez pas reproduire, dupliquer, copier, vendre, revendre ou exploiter une partie quelconque des Services sans notre autorisation écrite expresse.</p>
+        </section>
+
+        <section class="legal-section">
+            <h2>8. Protection des données</h2>
+            <p>Nous prenons très au sérieux la protection de vos données personnelles. Notre politique de confidentialité, disponible sur notre site, explique comment nous collectons, utilisons et protégeons vos informations.</p>
+            <p>En utilisant nos services, vous consentez à la collecte et à l'utilisation de vos informations conformément à notre politique de confidentialité.</p>
+        </section>
+
+        <section class="legal-section">
+            <h2>9. Limitation de responsabilité</h2>
+            <p>BookMyStay ne peut garantir l'exactitude complète des informations fournies par les hébergeurs. Bien que nous nous efforcions de vérifier ces informations, nous ne pouvons être tenus responsables des inexactitudes.</p>
+            <p>En aucun cas, BookMyStay, ses dirigeants, administrateurs, employés ou agents ne seront tenus responsables de tout dommage direct, indirect, accessoire, spécial ou consécutif résultant de l'utilisation ou de l'impossibilité d'utiliser nos services.</p>
+        </section>
+
+        <section class="legal-section">
+            <h2>10. Modifications des conditions</h2>
+            <p>BookMyStay se réserve le droit de modifier ces conditions générales d'utilisation à tout moment. Les modifications entreront en vigueur dès leur publication sur notre site web.</p>
+            <p>Il est de votre responsabilité de consulter régulièrement nos conditions générales d'utilisation. Votre utilisation continue des Services après la publication de modifications constitue votre acceptation de ces modifications.</p>
+        </section>
+
+        <section class="legal-section">
+            <h2>11. Loi applicable</h2>
+            <p>Ces conditions sont régies et interprétées conformément aux lois françaises, et vous vous soumettez irrévocablement à la juridiction exclusive des tribunaux de Paris, France.</p>
+        </section>
+
+        <section class="legal-section">
+            <h2>12. Contact</h2>
+            <p>Pour toute question concernant ces conditions générales d'utilisation, veuillez nous contacter à :</p>
+            <p>BookMyStay<br>
+            123 Rue de Paris<br>
+            75000 Paris, France<br>
+            Email : legal@bookmystay.fr<br>
+            Téléphone : +33 1 23 45 67 89</p>
+        </section>
+    </div>
+
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-section footer-about">
+                    <h3>BookMyStay</h3>
+                    <p>Votre partenaire pour des séjours inoubliables partout dans le monde. Nous vous aidons à trouver l'hébergement parfait depuis plus de 10 ans.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section footer-links">
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><a href="hotels.html">Hôtels</a></li>
+                        <li><a href="reservations.html">Réservations</a></li>
+                        <li><a href="promotions.html">Promotions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h3>Contactez-nous</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Rue de Paris, 75000 Paris</p>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@bookmystay.fr</p>
+                </div>
+                <div class="footer-section footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Inscrivez-vous pour recevoir nos offres exclusives</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookMyStay. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="hotel-booking-website\cgu">CGU</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
