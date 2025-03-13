@@ -174,6 +174,7 @@ body {
     transform: translateY(-2px);
 }
 
+
 /* Map section */
 .map-section {
     margin-top: 60px;
@@ -233,5 +234,87 @@ body {
 @media screen and (max-width: 576px) {
     .section-header h2 {
         font-size: 2rem;  /* Même que page d'accueil */
+=======
+/* Footer Styles - Improved */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 40px;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section:last-child {
+    margin-right: 0;
+}
+
+.footer-section h3 {
+    color: #f8f8f8;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #ff6b6b;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 30px;
+
     }
 }

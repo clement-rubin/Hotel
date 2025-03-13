@@ -1,3 +1,4 @@
+
 @import 'variables.css';
 
 /* Styles spécifiques à la page promotions */
@@ -35,6 +36,126 @@ body {
     color: #666;  /* Même que page d'accueil */
     max-width: 700px;
     margin: 0 auto;
+
+/* Styles de base */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Styles pour la navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.logo-highlight {
+    color: #ff6b6b;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a i {
+    margin-right: 5px;
+}
+
+.nav-links a:hover,
+.nav-links li.active a {
+    color: #ff6b6b;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #ff5252;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 2px 0;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Styles pour le contenu principal */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+
 }
 
 .promotions-grid {
@@ -46,6 +167,7 @@ body {
 
 .promotion {
     background-color: #fff;
+
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     padding: 25px;
@@ -63,6 +185,29 @@ body {
     color: var(--primary-dark);
     font-size: 1.4rem;
     margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 10px;
+    padding: 25px;
+    display: inline-block;
+    width: calc(100% - 60px);
+    max-width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    vertical-align: top;
+}
+
+.promotion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.promotion h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.2rem;
+
 }
 
 .promotion p {
@@ -142,15 +287,55 @@ body {
     color: white;
     font-size: 1.3rem;
     margin-bottom: 20px;
+
+/* Footer Styles - Improved */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 30px;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section:last-child {
+    margin-right: 0;
+}
+
+.footer-section h3 {
+    color: #f8f8f8;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+
     position: relative;
     padding-bottom: 10px;
 }
 
+
 .footer-section h3:after {
+
+.footer-section h3::after {
+
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
+
     width: 40px;
     height: 2px;
     background-color: var(--primary);
@@ -171,10 +356,96 @@ body {
 @media screen and (max-width: 768px) {
     .promotions-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    width: 50px;
+    height: 2px;
+    background-color: #ff6b6b;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #bbb;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a, 
+.footer-section p a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover,
+.footer-section p a:hover {
+    color: #ff6b6b;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #bbb;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff6b6b;
+}
+
+/* Hero section */
+.hero {
+    background-color: #4a90e2;
+    background-image: linear-gradient(135deg, #4a90e2 0%, #7b64c1 100%);
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .promotion {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+
     }
     
     .nav-links {
         display: none;
+
     }
     
     .hamburger {
@@ -207,5 +478,57 @@ body {
     
     .promotion {
         padding: 20px;
+
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+    }
+    
+    .nav-links.open {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    .promotion {
+        width: calc(100% - 40px);
+        max-width: none;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+
     }
 }

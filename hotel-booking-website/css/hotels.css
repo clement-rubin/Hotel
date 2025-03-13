@@ -1,9 +1,10 @@
 @import 'variables.css';
 
-/* Styles specific to the hotels page */
+/* Styles spécifiques à la page hôtels */
 
 /* General Styles */
 body {
+
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
 
 .container {
     max-width: 1200px;
@@ -223,10 +225,149 @@ body {
     height: 200px;
     overflow: hidden;
     position: relative;
+/* Navbar styles are in common.css */
+
+/* Hero section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hotels/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
 }
 
-.hotel-item img {
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Hotel listings */
+.hotel-listing {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-listing h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    position: relative;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.hotel-listing h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+}
+
+/* Filter section */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.filters input, 
+.filters select {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.filters input:focus,
+.filters select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(38, 99, 235, 0.1);
+}
+
+.filters input {
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+#filter-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 500;
+
+}
+
+#filter-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hotel cards */
+#hotels-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.hotel-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-image {
+    height: 200px;
     width: 100%;
+
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
@@ -267,6 +408,51 @@ body {
 .hotel-description {
     color: #666;
     margin-bottom: 15px;
+
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.hotel-card:hover .hotel-image {
+    transform: scale(1.05);
+}
+
+.hotel-info {
+    padding: 20px;
+}
+
+.hotel-info h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.hotel-location {
+    display: flex;
+    align-items: center;
+    color: #666;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.hotel-location i {
+    margin-right: 8px;
+    color: var(--primary);
+}
+
+.hotel-price {
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.hotel-info p {
+    color: #666;
+    margin-bottom: 20px;
+
     font-size: 0.95rem;
     line-height: 1.5;
 }
@@ -638,12 +824,50 @@ body {
 @media screen and (max-width: 576px) {
     .hotel-listing h2 {
         font-size: 1.8rem;
+
+.book-btn {
+    display: block;
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 500;
+}
+
+.book-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer is styled in common.css */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+    
+    .hotel-listing {
+        padding: 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+
     }
     
     #hotels-list {
         grid-template-columns: 1fr;
     }
-}
+
 
 @media screen and (max-width: 480px) {
     .hero {
